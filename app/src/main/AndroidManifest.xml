@@ -12,18 +12,23 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.Pokemon"
+        android:name=".PKMApp"
         tools:targetApi="31">
 
         <activity
             android:name=".views.splashscreen.SplashScreenActivity"
             android:exported="true"
-            android:theme="@style/Theme.Pokemon.SplashScreen"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Pokemon.SplashScreen">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".views.login.LoginActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

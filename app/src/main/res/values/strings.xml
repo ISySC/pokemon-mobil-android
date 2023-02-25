@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Pokemon</string>
+    
+    <!-- login strings activity -->
+    <string name="str_inicar_sesion">Iniciar sesión</string>
+    <string name="str_bienvenida">Bienvenido de nuevo, ingresa los campos que se te solicitan</string>
+    <string name="str_descripcion_logo">pokemon logo</string>
+    <string name="str_contrasena">Contraseña</string>
+    <string name="str_usuario">Usuario</string>
+    <string name="str_error_correo">Correo electrónico incorrecto.</string>
+    <string name="str_unirse_con">o unirse con</string>
+    <string name="str_google">Continuar con Google</string>
+    <string name="str_facebook">Continuar con Facebook</string>
 </resources>
