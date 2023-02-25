@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- logotipo -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/str_descripcion_logo"
+                    android:src="@drawable/ic_logotipo" />
+            </RelativeLayout>
+            <!-- -->
+
+            <!-- Bienvenida -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_30"
+                android:layout_marginRight="@dimen/margin_20"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/tv_style.bold"
+                    android:text="@string/str_inicar_sesion"
+                    android:textSize="@dimen/font_30" />
+
+                <TextView
+                    style="@style/tv_style.regular"
+                    android:text="@string/str_bienvenida"
+                    android:textColor="@color/gray" />
+
+            </LinearLayout>
+            <!-- -->
+
+            <!-- Usuario y contraseña -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_20"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_usuario"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/str_usuario"
+                    android:textColorHint="@color/black"
+                    app:boxStrokeColor="@color/primary_color">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_usuario"
+                        style="@style/input_style"
+                        android:inputType="textEmailAddress" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_contrasena"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:hint="@string/str_contrasena"
+                    android:textColorHint="@color/black"
+                    app:boxStrokeColor="@color/primary_color"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_contrasena"
+                        style="@style/input_style"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+            <!-- -->
+
+            <!-- botón iniciar sesión -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_20"
+                android:layout_weight="0.50"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_inicio_sesion"
+                    style="@style/btn_style"
+                    android:background="@drawable/btn_rounder"
+                    android:text="@string/str_inicar_sesion" />
+
+            </LinearLayout>
+
+            <!-- unirse con -->
+            <TextView
+                style="@style/tv_style.bold"
+                android:layout_margin="@dimen/margin_20"
+                android:text="@string/str_unirse_con"
+                android:textAlignment="center"
+                android:textSize="@dimen/font_18" />
+            <!-- -->
+
+            <!-- botón google -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_60"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_20"
+                android:background="@drawable/btn_rounder_with_fill"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/margin_40"
+                    android:src="@drawable/ic_google" />
+
+                <TextView
+                    style="@style/tv_style.regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_40"
+                    android:gravity="center"
+                    android:text="@string/str_google"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_20" />
+
+            </LinearLayout>
+
+            <!-- botón facebook -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_60"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_20"
+                android:background="@drawable/btn_rounder_with_fill"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/margin_40"
+                    android:src="@drawable/ic_fb" />
+
+                <TextView
+                    style="@style/tv_style.regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_40"
+                    android:gravity="center"
+                    android:text="@string/str_facebook"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_20" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
