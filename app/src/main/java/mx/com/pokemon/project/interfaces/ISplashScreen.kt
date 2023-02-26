@@ -4,7 +4,7 @@ import android.os.Handler
 import android.os.Looper
 import mx.com.pokemon.project.DInjection
 import mx.com.pokemon.project.utils.Utils.Companion.showActivity
-import mx.com.pokemon.project.views.login.LoginActivity
+import mx.com.pokemon.project.ui.login.LoginActivity
 
 interface ISplashScreen {
 
