@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Pokemon</string>
-    
+
     <!-- login strings activity -->
     <string name="str_inicar_sesion">Iniciar sesión</string>
     <string name="str_bienvenida">Bienvenido de nuevo, ingresa los campos que se te solicitan</string>
@@ -8,7 +8,20 @@
     <string name="str_contrasena">Contraseña</string>
     <string name="str_usuario">Usuario</string>
     <string name="str_error_correo">Correo electrónico incorrecto.</string>
+    <string name="str_error_password">La contraseña no cumple con el criterio</string>
     <string name="str_unirse_con">o unirse con</string>
     <string name="str_google">Continuar con Google</string>
     <string name="str_facebook">Continuar con Facebook</string>
+
+
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
 </resources>
