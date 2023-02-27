@@ -7,9 +7,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.widget.ProgressBar
 import androidx.appcompat.widget.AppCompatButton
 import com.google.android.material.textfield.TextInputEditText
+import mx.com.pokemon.project.DInjection
 
 import mx.com.pokemon.project.R
 import mx.com.pokemon.project.databinding.LoginActivityBinding
+import mx.com.pokemon.project.ui.home.HomeActivity
+import mx.com.pokemon.project.utils.Utils
 import mx.com.pokemon.project.utils.Utils.Companion.afterTextChanged
 
 class LoginActivity : AppCompatActivity() {
@@ -79,7 +82,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         login.setOnClickListener {
-
+            Utils.showActivity(DInjection.context().applicationContext, HomeActivity::class.java)
         }
     }
 }

@@ -1,4 +1,4 @@
-package mx.com.pokemon.project.views.splashscreen
+package mx.com.pokemon.project.ui.splashscreen
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
