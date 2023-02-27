@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- header -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="@color/primary_color"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/margin_80"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginRight="@dimen/margin_20"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_busqueda"
+                    style="@style/tv_style.bold"
+                    android:textSize="@dimen/font_25"
+                    android:layout_marginRight="@dimen/margin_80"
+                    android:text="@string/str_busqueda"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_subtitulo"
+                    style="@style/tv_style.regular"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_70"
+                    android:text="@string/str_titulo"
+                    android:textColor="@color/white" />
+
+                <SearchView
+                    android:id="@+id/sv_pokemon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:background="@drawable/drawable_searchview"
+                    android:iconifiedByDefault="false"
+                    android:queryBackground="@null"
+                    android:queryHint="@string/str_buscar" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/margin_10"
+                android:contentDescription="@string/str_descripcion_logo"
+                android:src="@drawable/img_pokebola" />
+
+        </RelativeLayout>
+        <!-- -->
+
+        <!-- pokemon list options -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_5">
+
+            <ImageView
+                android:id="@+id/iv_list"
+                android:layout_width="@dimen/width_30"
+                android:layout_height="@dimen/width_30"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/margin_10"
+                android:src="@drawable/ic_list_bulleted" />
+
+            <ImageView
+                android:id="@+id/iv_grid"
+                android:layout_width="@dimen/width_30"
+                android:layout_height="@dimen/width_30"
+                android:layout_marginRight="@dimen/margin_20"
+                android:layout_toLeftOf="@id/iv_list"
+                android:src="@drawable/ic_list_grid" />
+
+        </RelativeLayout>
+        <!-- -->
+
+    </LinearLayout>
+
+    <!-- pokemon list -->
+    <ListView
+        android:id="@+id/lv_pokemones"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" />
+    <!-- -->
+
+</LinearLayout>

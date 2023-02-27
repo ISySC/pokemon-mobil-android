@@ -1,11 +1,11 @@
-package mx.com.pokemon.project.views.login
+package mx.com.pokemon.project.ui.home
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import mx.com.pokemon.project.databinding.LoginActivityBinding
+import mx.com.pokemon.project.databinding.HomeActivityBinding
 
-class LoginActivity : AppCompatActivity() {
-    private lateinit var binding: LoginActivityBinding
+class HomeActivity : AppCompatActivity() {
+    private lateinit var binding: HomeActivityBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -14,7 +14,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun setInitView() {
-        binding = LoginActivityBinding.inflate(layoutInflater)
+        binding = HomeActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
 
