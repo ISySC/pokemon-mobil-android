@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:fitsSystemWindows="true">
 
@@ -96,11 +97,12 @@
     </LinearLayout>
 
     <!-- pokemon list -->
-    <ListView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/lv_pokemones"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1.0" />
+        android:layout_weight="1.0"
+        tools:listitem="@layout/layout_item_movie" />
     <!-- -->
 
 </LinearLayout>
