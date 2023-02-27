@@ -102,7 +102,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1.0"
-        tools:listitem="@layout/layout_item_movie" />
+        tools:listitem="@layout/layout_item_pokemon" />
     <!-- -->
 
 </LinearLayout>
