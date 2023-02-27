@@ -6,7 +6,8 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.util.Patterns
 import android.widget.EditText
-import java.util.regex.Pattern
+import mx.com.pokemon.project.DInjection
+import mx.com.pokemon.project.database.PokemonInstanceDB
 
 class Utils {
     companion object {
@@ -53,6 +54,11 @@ class Utils {
 
                 override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {}
             })
+        }
+
+        //funcion conectar base de datos
+        fun dbConnect(): PokemonInstanceDB {
+            return PokemonInstanceDB.getInstance(DInjection.context())
         }
     }
 }

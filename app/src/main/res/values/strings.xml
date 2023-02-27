@@ -17,4 +17,8 @@
     <string name="str_busqueda">¿Qué pokémon estás buscando?</string>
     <string name="str_titulo">Busca un pokémon por su nombre o usando su número de pokedex</string>
     <string name="str_buscar">Buscar Pokémon</string>
+
+    <!-- item card string -->
+    <string name="str_pokemon_name">Name</string>
+    <string name="str_pokemon_number">Number</string>
 </resources>

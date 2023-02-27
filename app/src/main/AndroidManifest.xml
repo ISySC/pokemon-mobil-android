@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="mx.com.pokemon.project">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".PKMApp"
         android:allowBackup="true"
