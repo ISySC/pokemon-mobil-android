@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">Pokemon</string>
+
+    <!-- login strings activity -->
+    <string name="str_inicar_sesion">Iniciar sesión</string>
+    <string name="str_bienvenida">Bienvenido de nuevo, ingresa los campos que se te solicitan</string>
+    <string name="str_descripcion_logo">pokemon logo</string>
+    <string name="str_contrasena">Contraseña</string>
+    <string name="str_usuario">Usuario</string>
+    <string name="str_error_correo">Correo electrónico incorrecto.</string>
+    <string name="str_error_password">La contraseña no cumple con el criterio</string>
+    <string name="str_unirse_con">o unirse con</string>
+    <string name="str_google">Continuar con Google</string>
+    <string name="str_facebook">Continuar con Facebook</string>
+
+    <!-- home strings activity -->
+    <string name="str_busqueda">¿Qué pokémon estás buscando?</string>
+    <string name="str_titulo">Busca un pokémon por su nombre o usando su número de pokedex</string>
+    <string name="str_buscar">Buscar Pokémon</string>
+
+    <!-- item card string -->
+    <string name="str_pokemon_name">Name</string>
+    <string name="str_pokemon_number">Number</string>
 </resources>
